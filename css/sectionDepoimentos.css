@@ -1,0 +1,128 @@
+#depoimentos {
+    overflow: hidden;
+    position: relative;
+    padding-block: 0;
+        padding-bottom: 8rem;
+}
+
+#depoimentos header h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#depoimentos header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#depoimentos img.bg.mobile {
+    position: absolute;
+    width: 200%;
+    height: auto;
+    top: 60%;
+    transform: translate(0, -50%);
+    z-index: 0;
+    left: 0;
+
+    animation: bgDesktop infinite linear 50s;
+
+    filter: blur(3px) brightness(.7);
+}
+
+#depoimentos img.bg.desktop {
+    display: none;
+}
+
+#depoimentos .content {
+    position: relative;
+    z-index: 1;
+}
+
+#depoimentos .content .cards {
+    padding-bottom: 4rem;
+    user-select: none;
+}
+
+#depoimentos .content .card {
+    overflow: hidden;
+}
+
+#depoimentos .content .card img,
+#depoimentos .content .card video {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+#depoimentos .swiper-pagination-bullet {
+    background-color: #5151513e; 
+    opacity: 1; 
+    width: 13px;
+    height: 13px;
+  }
+  
+#depoimentos .swiper-pagination-bullet-active {
+    background-color: #63FAD6; 
+}
+
+@media (min-width: 1080px) {
+    section#depoimentos {
+        padding-block: 0;
+        padding-bottom: 8rem;
+    }
+
+    section#depoimentos header h2 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    section#depoimentos .content .cards {
+        padding-bottom: 7rem;
+    }
+
+    /* section#depoimentos .wrapper {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+    } */
+
+    section#depoimentos .content {
+        z-index: 10;
+    }
+
+    section#depoimentos img.bg.mobile {
+        display: none;
+    }
+
+    section#depoimentos img.bg.desktop {
+        display: inherit;
+
+        position: absolute;
+        width: 150%;
+        top: 60%;
+        transform: translate(0, -50%);
+        z-index: 0;
+
+        animation: bgDesktop infinite linear 50s;
+
+        filter: blur(3px) brightness(.7);
+    }
+}
+
+@keyframes bgDesktop {
+    0% {
+        transform: translate(0, -50%);
+    }
+
+    50% {
+        transform: translate(-30%, -50%);
+    }
+
+    100% {
+        transform: translate(0, -50%);
+    }
+}

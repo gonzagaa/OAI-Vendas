@@ -1,0 +1,524 @@
+#robos {
+    position: relative;
+    overflow: hidden;
+}
+
+#robos header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#robos span.span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#robos header h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+}
+
+#robos .cards {
+    margin-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+#robos .cards .card img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    mix-blend-mode: darken;
+    opacity: .45;
+}
+
+#robos .cards .card {
+    height: 100%;
+    min-height: 37rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    padding: 2.5rem;
+    padding-block: 3.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: linear-gradient(to right, #000b07, #00140c, #00140c);
+}
+
+#robos .cards .card .text {
+    position: relative;
+    z-index: 1;
+}
+
+#robos .cards .card .text .text-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#robos .cards .card .text .image {
+    background: #ffffff21;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#robos .cards .card img.icon {
+    width: 5rem;
+    object-fit: cover;
+}
+
+#robos .cards .card .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#robos .cards .card .buttons .topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+#robos .cards .card .buttons .topic h4 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+#robos .cards .card .buttons .topic h5 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: -2rem;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#robos .cards .card a button {
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #fff, #c8c8c8);
+    color: #000000;
+    font-weight: 600;
+}
+
+#robos .cards .card h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#robos .cards .card h3 span {
+    background: transparent;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    display: block;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#robos .cards .card p {
+    font-size: 1.6rem;
+    color: #fff;
+
+    margin-bottom: 2rem;
+}
+
+/* EFEITO CIRCULO =========== */
+#robos .efeito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+
+    display: none;
+}
+
+#robos .efeito img {
+    width: 15rem;
+    animation: zoom 5s ease infinite;
+    background: #004324be;
+    padding: .6rem;
+    border-radius: 1rem;
+}
+
+#robos .efeito span.linha {
+    position: absolute;
+    border: 1px solid var(--secondy-color);
+    border-radius: 50%;
+    animation: rodando linear infinite;
+}
+
+#robos .efeito header {
+    display: none;
+}
+
+#robos .efeito span.linha.um {
+    width: 300px;
+    height: 300px;
+    animation-duration: 10s;
+    border-right: 1px solid transparent;
+}
+
+#robos .efeito span.linha.dois {
+    width: 400px;
+    height: 400px;
+    animation-duration: 15s;
+    opacity: 0.4;
+    border-left: 1px solid transparent;
+}
+
+#robos .efeito span.linha.tres {
+    width: 500px;
+    height: 500px;
+    animation-duration: 20s;
+    opacity: 0.2;
+    border-top: 1px solid transparent;
+}
+
+#robos a button.button {
+    margin-top: 3rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: #5151513e; 
+    opacity: 1; 
+    width: 13px;
+    height: 13px;
+  }
+  
+ .swiper-pagination-bullet-active {
+    background-color: #6dffce; 
+}
+
+.swiper-button-next {
+    background: #6dffce;
+    border: 1px solid #ffffff5d;
+    padding: 4rem;
+    right: -14%;
+    transform: scale(.6);
+    top: 41%;
+    color: #000000;
+    border-radius: 2rem;
+}
+  
+.swiper-button-prev {
+    background: #6dffce;
+    border: 1px solid #ffffff5d;
+    border-radius: 2rem;
+    padding: 4rem;
+    transform: scale(.6);
+    top: 41%;
+    left: -14%;
+    color: #000000;
+}
+
+body section#robos .wrapper .content .swiper.mySwiper4 {
+    overflow: inherit;
+}
+
+body section#robos .wrapper .content .swiper.mySwiper4 .cards.swiper-wrapper {
+}
+
+#robos .cards .card {
+}
+
+@media (min-width: 1080px) {
+    section#robos {
+        padding-block: 3rem;
+    }
+    section#robos .wrapper {
+        width: min(120rem, 100%);
+    }
+
+    #robos .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    section#robos header:nth-child(1) {
+        display: none;
+    }
+
+    section#robos .efeito {
+        display: flex;
+        left: 50%;
+        top: 47%;
+        transform: translate(-50%, -50%);
+    }
+
+    section#robos .cards .card:nth-child(2),
+    section#robos .cards .card:nth-child(6) {
+        transform: translateX(50px);
+    }
+    
+    section#robos .cards .card:nth-child(3),
+    section#robos .cards .card:nth-child(7) {
+        transform: translateX(-50px);
+    }
+    
+    section#robos .efeito header {
+        display: inherit;
+        width: 60%;
+    }
+
+    section#robos .efeito header h2 {
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    section#robos .efeito span.linha.um {
+        width: 400px;
+        height: 400px;
+        border-right: 1.5px solid transparent;
+    }
+    
+    section#robos .efeito span.linha.dois {
+        width: 500px;
+        height: 500px;
+        border-left: 1.5px solid transparent;
+    }
+    
+    section#robos .efeito span.linha.tres {
+        width: 600px;
+        height: 600px;
+        border-top: 1.5px solid transparent;
+    }
+
+    section#robos .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        column-gap: 30%;
+    }
+
+    section#robos .cards .card {
+        min-height: initial;
+
+        display: inherit;
+
+        padding: 2rem;
+        border-radius: 2rem;
+
+        background: linear-gradient(to right, #0b0b0b, #171717, #131313);
+    }
+
+    body section#robos .cards .card .text img.icon {
+        
+    }
+
+    section#robos .cards .card:nth-child(even) {
+        /* background: linear-gradient(to right, #03CE95, #63FAD6, #03CE95); */
+    }
+
+    section#robos .cards .card .text {
+        display: grid;
+        grid-template-columns: 1fr 3.5fr;
+        gap: 2rem;
+    }
+
+    section#robos .cards .card .text .text-box {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-inline: 1rem;
+    }
+
+    section#robos .cards .card:nth-child(even) .text {
+        grid-template-columns: 3.5fr 1fr;
+        grid-template-areas: "a b";
+    }
+
+    body section#robos .wrapper .cards .card .text .image {
+        height: 100%;
+        padding: .5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #ffffff0b;
+    }
+
+    section#robos .cards .card:nth-child(even) .text .image {
+        grid-area: b;
+    }
+
+    section#robos .cards .card:nth-child(even) .text .text-box {
+        text-align: right;
+        align-items: end;
+    }
+    
+    section#robos .cards .card .text img.icon {
+        border-radius: 1.5rem;
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+    }
+
+    section#robos .cards .card .text h3 {
+        font-size: 1.4rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: right;
+        gap: .5rem;
+    }
+    
+    section#robos .cards .card h3 span {
+        display: inline;
+        letter-spacing: 0;
+        font-size: 1rem;
+        font-weight: 300;
+
+        background: #ffffff25;
+        padding: .4rem;
+        border-radius: .4rem;
+    }
+    
+
+    section#robos .cards .card .text p {
+        font-size: 1rem;
+    } 
+
+    section#robos .cards .card a button {
+        font-size: 1rem;
+        padding-block: 1rem;
+    }
+
+    section#robos a button.button {
+        margin-top: 0;
+        background: linear-gradient(to right, #03CE95, #63FAD6, #03CE95);
+    }
+
+    section#robos .swiper-button-prev,
+    section#robos .swiper-button-next,
+    section#robos .swiper-pagination {
+        display: none;
+    }
+
+    section#robos .cards .card .buttons a button {
+        margin-top: 0;
+    }
+
+    section#robos .cards .card .buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    section#robos .cards .card:nth-child(3) .buttons,
+    section#robos .cards .card:nth-child(5) .buttons,
+    section#robos .cards .card:nth-child(7) .buttons {
+        flex-direction: row-reverse;
+    }
+
+    section#robos .cards .card .buttons .topic {
+        text-align: left;
+    }
+
+    section#robos .cards .card .buttons .topic h4 {
+        font-size: 1rem;
+    }
+
+    section#robos .cards .card .buttons .topic h5 {
+        font-size: 3rem;
+    }
+}
+
+  @media (min-width: 1200px) {
+    section#robos .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    section#robos .wrapper {
+      width: min(150rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    section#robos .wrapper {
+      width: min(160rem, 100%);
+    }
+
+    section#robos .cards {
+        column-gap: 30%;
+    }
+
+    section#robos .cards .card:nth-child(2),
+    section#robos .cards .card:nth-child(8) {
+        transform: translateX(50px);
+    }
+    
+    section#robos .cards .card:nth-child(3),
+    section#robos .cards .card:nth-child(9) {
+        transform: translateX(-50px);
+    }
+    
+  }
+
+@keyframes rodando {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
