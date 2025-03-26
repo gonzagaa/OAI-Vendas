@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const openModalButtonsRobo = document.querySelectorAll(".openModalRobo");
 
   // Carrega o JSON e adiciona eventos aos botões
-  fetch("../../robos.json")
+  fetch("./robos.json")
     .then((response) => response.json())
     .then((data) => {
       openModalButtonsRobo.forEach((button) => {
