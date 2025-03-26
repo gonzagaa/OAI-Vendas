@@ -1,0 +1,161 @@
+.tarja {
+    overflow: hidden;
+    position: relative;
+    height: max-content;
+
+    padding-block: 1.5rem;
+    background: linear-gradient(to right, #002a20, #000, #000, #000, #000, #000, #00261d);
+} 
+
+.tarja::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #63FAD6 , transparent);
+    bottom: 0;
+    left: 0;
+}
+
+.tarja img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 1;
+
+    filter: brightness(.5);
+}
+
+.tarja .wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.tarja .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarja .text h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.tarja .text h3 span {
+    font-size: 2.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tarja .border {
+    width: 100%;
+    background: linear-gradient(130deg, #63FAD6, #161616, #161616, #63FAD6);
+    padding: .2rem;
+
+    margin-bottom: 1.5rem;
+    border-radius: 1.2rem;
+}
+
+.tarja .timer {
+    color: #fff;
+    background: linear-gradient(130deg, #1C1C1C, #080808);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.tarja .timer #countdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tarja .timer #countdown .time-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.tarja .timer #countdown .count-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.tarja .timer #countdown .count-unit {
+    font-size: 1.6rem;
+}
+
+@media (min-width: 1080px) {
+    .tarja img.bg {
+    }
+
+    .tarja {
+        padding-block: 2rem;
+    }
+
+    .tarja .text {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 2rem;
+        padding-inline: 10%;
+    }
+
+    .tarja .wrapper .text h3 {
+        text-align: left;
+        color: #fff;
+        font-size: 2.6rem;
+        margin-bottom: 0;
+    }
+
+    .tarja .wrapper .text h3 span {
+        font-size: 2.6rem;
+    }
+
+    .tarja .border {
+        margin-bottom: 0;
+    }
+
+    .tarja .timer #countdown .time-container {
+        gap: 3rem;
+    }
+
+    .tarja .timer #countdown .count-number {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    
+    .tarja .timer #countdown .count-unit {
+        font-size: 1.5rem;
+    }
+
+    .tarja .text p span {
+        font-size: 6rem;
+    }
+
+    .tarja .text p {
+        font-size: 1.6rem;
+    }
+
+    .tarja .text h3 {
+        font-size: 1.7rem;
+    }
+
+    .tarja .text h4 {
+        font-size: 1.7rem;
+    }
+}
+
