@@ -31,8 +31,8 @@
 
 #bonus header h2 {
     color: #fff;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
 }
 
 #bonus header h2 span {
@@ -47,7 +47,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 #bonus .borderCard {
@@ -61,12 +61,13 @@
     position: relative;
     width: 100%;
     padding: 2rem;
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     border-radius: 1rem;
 
     background: linear-gradient(130deg, #1C1C1C, #080808);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
@@ -74,7 +75,7 @@
 #bonus .card h3 {
     background: var(--gradient);
     color: #000000;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 1rem 2rem;
     border-radius: 0 0 1rem 1rem;
     font-weight: 800;
@@ -83,10 +84,32 @@
     top: -11%;
 }
 
+#bonus .card h4 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #d4d4d4;
+    font-weight: 600;
+}
+
+#bonus .card h4 span {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+#bonus .card h4 span.line {
+    color: #ffc2c2;
+    text-decoration: line-through;
+}
+
+#bonus .card h4 span.small {
+    color: #bdbdbd;
+    font-weight: 400;
+}
+
 #bonus .card p {
     font-size: 1.4rem;
     color: #bcbcbc;
-    text-align: left;
+    text-align: center;
 }
 
 #bonus .card p span {
@@ -98,29 +121,9 @@
     width: 100%;
 }
 
-#bonus h2 {
-    margin-top: 3rem;
-
-    font-size: 1.8rem;
-    color: #fff;
-    margin-bottom: .5rem;
-}
-
-#bonus h2 span {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#bonus h3 {
-    font-size: 1.4rem;
-    color: #b8b8b8;
-    font-weight: 400;
-}
-
 @media (min-width: 1080px)  {
     section#bonus header h2 {
-        font-size: 4rem;
+        font-size: 2.5rem;
         margin-bottom: 5rem;
     }
 
@@ -145,9 +148,5 @@
     section#bonus .card {
         padding: 3rem;
         padding-top: 5rem;
-    }
-
-    section#bonus .borderCard:nth-child(3) .card p {
-        font-size: 1.7rem;
     }
  }
