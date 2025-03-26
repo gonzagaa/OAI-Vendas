@@ -26,6 +26,11 @@
     font-weight: 400;
 }
 
+#novidade h3 span {
+    font-weight: 500;
+    color: #f0f0f0;
+}
+
 #novidade h3.dois {
     font-size: 2.5rem;
     margin-bottom: .5rem;

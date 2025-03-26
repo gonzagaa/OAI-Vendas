@@ -44,6 +44,15 @@
     align-items: center;
 }
 
+.tarja.v2 .text h3 {
+    font-size: 1.4rem;
+    display: inherit;
+}
+
+.tarja.v2 .text h3 span {
+    font-size: 1.4rem;
+}
+
 .tarja .text h3 {
     color: #fff;
     font-size: 1.6rem;
@@ -104,6 +113,21 @@
 
     .tarja {
         padding-block: 2rem;
+    }
+
+    .tarja.v2 .text {
+        display: inherit;
+        text-align: center;
+        padding-inline: 25%;
+    }
+
+    .tarja.v2 .wrapper .text h3 {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    .tarja.v2 .wrapper .text h3 span {
+        font-size: 2.1rem;
     }
 
     .tarja .text {
