@@ -8,11 +8,11 @@
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 50;
+    z-index: 150;
 }
   
 .modalRobo {
-    background: white;
+    background: rgb(8, 8, 8);
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
@@ -21,15 +21,17 @@
     transform: translateY(-50px);
     opacity: 0;
     transition: all 0.3s ease;
+    border: 2px solid #ffffff15;
 }
 
 .modalRobo h2 {
     margin-bottom: .5rem;
+    color: #fff;
 }
 
 .modalRobo span.miniindice {
     font-size: 1rem;
-    color: #fff;
+    color: #000000;
     background: var(--gradient);
     padding: .4rem;
     border-radius: .5rem;
@@ -50,7 +52,7 @@
     font-size: 40px;
     cursor: pointer;
 
-    color: #000;
+    color: #ffffff;
     padding: 0;
 }
 
@@ -74,31 +76,36 @@
     width: 100%;
     padding: 2rem;
     border-radius: 1rem;
-    background: #ececec;
+    background: #121212;
 }
 
 .modalRobo .cards .card h3 {
     font-size: 1.5rem;
     font-weight: 500;
+    color: #Fff;
 }
 
 .modalRobo .cards .card p {
     margin-top: 1rem;
     font-size: 3rem;
 
-    background: linear-gradient(155deg, #000, #00ae5d);
+    background: linear-gradient(155deg, #000, #63FAD6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
 
 .modalRobo .cards .card span {
-    background: linear-gradient(155deg, #000, #00ae5d);
+    background: linear-gradient(155deg, #000, #63FAD6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.6rem;
     font-weight: 500;
     display: block;
+}
+
+.modalRobo p.obs {
+    color: #Fff;
 }
 
 @media (min-width: 1080px) {

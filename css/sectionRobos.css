@@ -122,6 +122,13 @@
     background: linear-gradient(to right, #fff, #c8c8c8);
     color: #000000;
     font-weight: 600;
+
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#robos .cards .card a button:hover {
+    filter: brightness(1.2);
 }
 
 #robos .cards .card h3 {
@@ -255,7 +262,7 @@ body section#robos .wrapper .content .swiper.mySwiper4 .cards.swiper-wrapper {
 
 @media (min-width: 1080px) {
     section#robos {
-        padding-block: 8rem;
+        padding-block: 5rem;
     }
     section#robos .wrapper {
         width: min(120rem, 100%);

@@ -1,11 +1,11 @@
-#numeros {
+#bonus {
     overflow: hidden;
     position: relative;
 
     padding-block: 8rem;
 }
 
-#numeros img.bg {
+#bonus img.bg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -15,11 +15,11 @@
     z-index: 0;
 }
 
-#numeros img.bg.desktop {
+#bonus img.bg.desktop {
     display: none;
 }
 
-#numeros .content {
+#bonus .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,20 +29,20 @@
     z-index: 2;
 }
 
-#numeros header h2 {
+#bonus header h2 {
     color: #fff;
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
-#numeros header h2 span {
+#bonus header h2 span {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
-#numeros .cards {
+#bonus .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,14 +50,14 @@
     gap: 3rem;
 }
 
-#numeros .borderCard {
+#bonus .borderCard {
     width: 100%;
     background: linear-gradient(130deg, #5a5a5a, #161616 30%);
     padding: .2rem;
     border-radius: 1.2rem;
 }
 
-#numeros .card {
+#bonus .card {
     position: relative;
     width: 100%;
     padding: 2rem;
@@ -71,7 +71,7 @@
     gap: 1rem;
 }
 
-#numeros .card h3 {
+#bonus .card h3 {
     background: var(--gradient);
     color: #000000;
     font-size: 2rem;
@@ -83,22 +83,22 @@
     top: -11%;
 }
 
-#numeros .card p {
+#bonus .card p {
     font-size: 1.4rem;
     color: #bcbcbc;
     text-align: left;
 }
 
-#numeros .card p span {
+#bonus .card p span {
     color: #d1d1d1;
     font-weight: 800;
 }
 
-#numeros a {
+#bonus a {
     width: 100%;
 }
 
-#numeros h2 {
+#bonus h2 {
     margin-top: 3rem;
 
     font-size: 1.8rem;
@@ -106,48 +106,48 @@
     margin-bottom: .5rem;
 }
 
-#numeros h2 span {
+#bonus h2 span {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#numeros h3 {
+#bonus h3 {
     font-size: 1.4rem;
     color: #b8b8b8;
     font-weight: 400;
 }
 
 @media (min-width: 1080px)  {
-    section#numeros header h2 {
-        font-size: 3rem;
+    section#bonus header h2 {
+        font-size: 4rem;
         margin-bottom: 5rem;
     }
 
-    section#numeros img.bg.desktop {
+    section#bonus img.bg.desktop {
         display: inherit;
     }
 
-    section#numeros img.bg.mobile {
+    section#bonus img.bg.mobile {
         display: none;
     }
 
-    section#numeros .cards {
+    section#bonus .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
     }
 
-    section#numeros a {
+    section#bonus a {
         width: initial;
     }
 
-    section#numeros .card {
+    section#bonus .card {
         padding: 3rem;
         padding-top: 5rem;
     }
 
-    section#numeros .borderCard:nth-child(3) .card p {
+    section#bonus .borderCard:nth-child(3) .card p {
         font-size: 1.7rem;
     }
  }

@@ -276,8 +276,11 @@
 }
 
 @media (min-width: 1080px)  {
+    section#planos {
+        padding-block: 8rem;
+    }
     section#planos header h2 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 8rem;
     }
 

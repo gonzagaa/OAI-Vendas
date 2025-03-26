@@ -40,12 +40,7 @@
   }
 
   #home img.logo {
-    position: absolute;
     width: 15rem;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 2;
   }
 
   #home .content .date {

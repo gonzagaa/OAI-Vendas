@@ -5,15 +5,13 @@
 @import './sectionNumeros.css';
 @import './sectionDepoimentos.css';
 @import './sectionRobos.css';
+@import './sectionBonus.css';
+@import './sectionGarantia.css';
 @import './sectionSobre.css';
 @import './button.css';
 
-@import './lines.css';
 @import './footer.css';
-@import './sectionVideo.css';
-@import './obrigado.css';
-@import './barraCarregamento.css';
-@import './modalForm.css';
 @import './modalRobo.css';
+@import './buttonWhatsapp.css';
 
 

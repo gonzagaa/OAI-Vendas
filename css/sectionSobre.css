@@ -43,11 +43,15 @@
 }
 
 #sobre header p span {
-    color: #f0f0f0;
+    color: #d3d3d3;
     font-weight: 600;
 }
 
 @media (min-width: 1080px) {
+    section#sobre {
+        padding-block: 7rem;
+    }
+    
     section#sobre img.bg.desktop {
         display: inherit;
     }

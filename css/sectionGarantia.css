@@ -1,0 +1,67 @@
+#garantia {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #garantia .image img {
+    width: 100%;
+  }
+  
+  section#garantia header {
+    margin-top: 5rem;
+  }
+
+  #garantia header h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  #garantia header p {
+    font-size: 1.5rem;
+    color: #acacac;
+    font-weight: 400;
+  
+    margin-top: .5rem;
+  }
+
+  #garantia header p span {
+    color: #d0d0d0;
+    font-weight: 600;
+  }
+
+  #garantia a button {
+    margin-top: 3rem;
+  }
+  
+  @media (min-width: 1080px) {
+        section#garantia {
+        }
+      section#garantia .content {
+          display: grid;
+          grid-template-columns: 1.5fr 1fr;
+          gap: 10rem;
+          align-items: center;
+          grid-template-areas: "A B";
+      }
+  
+      section#garantia header {
+          grid-area: A;
+          text-align: left;
+          margin-top: 0;
+      }
+
+      section#garantia header h2 {
+        font-size: 5rem;
+        color: #fff;
+      }
+  
+      section#garantia header p {
+          position: relative;
+          z-index: 2;
+          text-align: left;
+          font-size: 2rem;
+      }
+  }
+  
+  
+  
