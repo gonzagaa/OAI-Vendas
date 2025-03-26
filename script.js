@@ -190,3 +190,20 @@ document.addEventListener("DOMContentLoaded", () => {
    // Insere na tela
    document.getElementById("countdown").innerHTML = countdownHTML;
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('https://oai-vendas.vercel.app/api/conversion', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+    // Nenhum body é necessário, o backend já gera o evento
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Evento PageView enviado:', data);
+  })
+  .catch(error => {
+    console.error('Erro ao enviar evento PageView:', error);
+  });
+});
