@@ -255,7 +255,7 @@ body section#robos .wrapper .content .swiper.mySwiper4 .cards.swiper-wrapper {
 
 @media (min-width: 1080px) {
     section#robos {
-        padding-block: 3rem;
+        padding-block: 8rem;
     }
     section#robos .wrapper {
         width: min(120rem, 100%);

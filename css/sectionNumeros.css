@@ -5,11 +5,28 @@
     padding-block: 8rem;
 }
 
+#numeros img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#numeros img.bg.desktop {
+    display: none;
+}
+
 #numeros .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+    z-index: 2;
 }
 
 #numeros header h2 {
@@ -105,6 +122,14 @@
     section#numeros header h2 {
         font-size: 4rem;
         margin-bottom: 5rem;
+    }
+
+    section#numeros img.bg.desktop {
+        display: inherit;
+    }
+
+    section#numeros img.bg.mobile {
+        display: none;
     }
 
     section#numeros .cards {
