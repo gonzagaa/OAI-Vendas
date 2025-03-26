@@ -1,4 +1,14 @@
 export default async function handler(req, res) {
+    // Permitir qualquer origem — ou especifique sua origem se quiser mais segurança
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  
+    // Responder rapidamente se for uma requisição OPTIONS (preflight)
+    if (req.method === 'OPTIONS') {
+      return res.status(200).end();
+    }
+  
     if (req.method !== 'POST') {
       return res.status(405).json({ error: 'Método não permitido' });
     }
@@ -11,7 +21,7 @@ export default async function handler(req, res) {
       event_time: Math.floor(Date.now() / 1000),
       action_source: 'website',
       event_source_url: req.headers.referer || '',
-      user_data: {} // Nenhum dado pessoal obrigatório para PageView
+      user_data: {}
     };
   
     try {
