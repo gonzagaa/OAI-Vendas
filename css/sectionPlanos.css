@@ -249,6 +249,10 @@
     text-decoration: line-through;
 }
 
+#planos.v2 .price h5 span {
+    text-decoration: none;
+}
+
 #planos .price h2 {
     font-size: 7rem;
     background: linear-gradient(to bottom, #eeeeef, #aaaaaa, #eeeeef);
