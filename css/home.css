@@ -1,7 +1,7 @@
 #home {
     background: var(--bg-black);
-    height: 95vh;
-    max-height: 95vh;
+    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
   
     position: relative;
@@ -72,22 +72,45 @@
     background: linear-gradient(to right, transparent, #63FAD6, transparent);
   }
 
-  #home .content .date p {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #ffffff;
-    margin-top: 0;
+  #home .meta {
+    margin-top: 1rem;
 
-    background: linear-gradient(to right, #c5c5c5, #ffffff, #ffffff, #cccccc);
+    padding: 1.5rem;
+    background: linear-gradient(to right, #002a20, #000, #000, #000, #000, #000, #00261d);
+    border-radius: 1rem;
+    border: 1px solid #ffffff1d;
+  }
+
+  #home .meta h4 {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  #home .meta h4 span,
+  #home .meta h5 span {
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  #home .meta h5 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: .4rem;
+  }
+
+  #home .meta h6 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #e4e4e4;
+
+    margin-top: 1rem;
+  }
   
   #home h1 {
     color: #ffffff;
     line-height: 1;
-    font-size: 3rem;
+    font-size: 2.5rem;
   
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -115,16 +138,12 @@
   #home p.dois {
     font-weight: 400;
     color: #fff;
-    font-size: 1.4rem;
-    margin-top: 1rem;
+    font-size: 1.6rem;
   }
 
   #home p.dois span {
     font-weight: 700;
-
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
   }
 
   #home p span {
@@ -321,6 +340,45 @@
       display: flex;
       align-items: center;
     }
+
+    header#home .meta {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1rem;
+      padding-inline: 2rem;
+      border-radius: 1rem;
+    }
+
+    header#home .meta h4 {
+      margin-top: 0;
+      padding: 1rem;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    header#home .meta h5 {
+      margin-top: 0;
+      padding: 1rem;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    header#home .meta h6 {
+      margin-top: 0;
+      padding: 1rem;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
   
     header#home .content h1 {
       font-size: 5rem;
@@ -345,6 +403,7 @@
       color: #fff;
       font-weight: 500;
       margin-top: 1rem;
+      font-size: 2rem;
     }
   
     header#home .content a button {
@@ -365,12 +424,8 @@
     }
 
     header#home .content h1 {
-      font-size: 6rem;
+      font-size: 5rem;
       width: 80%;
-    }
-
-    header#home .content h1 span {
-      font-size: 7rem;
     }
   }
   

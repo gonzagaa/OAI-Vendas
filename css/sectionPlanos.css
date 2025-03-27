@@ -22,7 +22,28 @@
     z-index: 1;
 }
 
-#planos header h2::before {
+#planos header {
+    position: relative;
+}
+
+#planos header h3 {
+    font-size: 1.6rem;
+    color: #b8b8b8;
+    font-weight: 400;
+}
+
+#planos header h3 span {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+#planos header h3 span.um {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#planos header::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -36,6 +57,7 @@
 #planos header h2 {
     color: #fff;
     font-size: 2.5rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
 
     position: relative;
