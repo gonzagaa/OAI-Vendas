@@ -73,6 +73,7 @@
   }
 
   #home .meta {
+    width: 100%;
     margin-top: 1rem;
 
     padding: 1.5rem;
@@ -82,7 +83,7 @@
   }
 
   #home .meta h4 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: #fff;
   }
 
@@ -94,13 +95,13 @@
   }
 
   #home .meta h5 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: #fff;
     margin-top: .4rem;
   }
 
   #home .meta h6 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: #e4e4e4;
 
@@ -110,7 +111,7 @@
   #home h1 {
     color: #ffffff;
     line-height: 1;
-    font-size: 2.5rem;
+    font-size: 2rem;
   
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -342,7 +343,9 @@
     }
 
     header#home .meta {
+      width: initial;
       display: flex;
+      flex-direction: column;
       gap: 1rem;
       align-items: center;
       padding: 1rem;
@@ -350,7 +353,12 @@
       border-radius: 1rem;
     }
 
+    header#home .meta .box {
+      display: flex;
+    }
+
     header#home .meta h4 {
+      font-size: 2rem;
       margin-top: 0;
       padding: 1rem;
       backdrop-filter: blur(16px) saturate(180%);
@@ -361,6 +369,7 @@
     }
 
     header#home .meta h5 {
+      font-size: 2rem;
       margin-top: 0;
       padding: 1rem;
       backdrop-filter: blur(16px) saturate(180%);
@@ -372,16 +381,12 @@
 
     header#home .meta h6 {
       margin-top: 0;
-      padding: 1rem;
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(0, 0, 0, 0.75);
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.125);
+      font-size: 1.2rem;
+      margin-bottom: .5rem;
     }
   
     header#home .content h1 {
-      font-size: 5rem;
+      font-size: 2.5rem;
       width: 90%;
       line-height: 0.9;
       color: #f8fffd;
@@ -389,7 +394,6 @@
     }
 
     header#home .content h1 span {
-    font-size:5rem;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -424,7 +428,7 @@
     }
 
     header#home .content h1 {
-      font-size: 5rem;
+      font-size: 2.5rem;
       width: 80%;
     }
   }

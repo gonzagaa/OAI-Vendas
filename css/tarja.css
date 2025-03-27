@@ -4,7 +4,7 @@
     height: max-content;
 
     padding-block: 1.5rem;
-    background: linear-gradient(to right, #002a20, #000, #000, #000, #000, #000, #00261d);
+    background: linear-gradient(to right,#fa2121, #ff4747, #ff4747, #ff4747, #ff4747, #ff4747, #fa2121);
 } 
 
 .tarja::before {
@@ -12,7 +12,7 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    background: linear-gradient(to right, transparent, #63FAD6 , transparent);
+    background: linear-gradient(to right, transparent, #fff , transparent);
     bottom: 0;
     left: 0;
 }
@@ -45,12 +45,18 @@
 }
 
 .tarja.v2 .text h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    padding-top: .5rem;
     display: inherit;
+    line-height: 1.7;
 }
 
 .tarja.v2 .text h3 span {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    color: #fa2121;
+    background: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
 }
 
 .tarja .text h3 {
@@ -65,9 +71,7 @@
 
 .tarja .text h3 span {
     font-size: 2.5rem;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
 }
 
 .tarja .border {
@@ -118,12 +122,13 @@
     .tarja.v2 .text {
         display: inherit;
         text-align: center;
-        padding-inline: 25%;
+        padding-inline: 30%;
     }
 
     .tarja.v2 .wrapper .text h3 {
         text-align: center;
         font-size: 2.1rem;
+        line-height: 1.3;
     }
 
     .tarja.v2 .wrapper .text h3 span {
