@@ -53,8 +53,8 @@
 
 .tarja.v2 .text h3 span {
     font-size: 1.6rem;
-    color: #fa2121;
-    background: #fff;
+    color: #ffffff;
+    background: #ffffff45;
     padding: .5rem;
     border-radius: .5rem;
 }
@@ -74,21 +74,14 @@
     
 }
 
-.tarja .border {
-    width: 100%;
-    background: linear-gradient(130deg, #63FAD6, #161616, #161616, #63FAD6);
-    padding: .2rem;
-
-    margin-bottom: 1.5rem;
-    border-radius: 1.2rem;
-}
-
 .tarja .timer {
-    color: #fff;
-    background: linear-gradient(130deg, #1C1C1C, #080808);
+    color: #fa2121;
+    background: linear-gradient(130deg, #ffffff, #ffffff);
     padding: 1rem 2rem;
     border-radius: 1rem;
     width: 100%;
+
+    margin-bottom: 1rem;
 }
 
 .tarja .timer #countdown {
@@ -103,12 +96,13 @@
 }
 
 .tarja .timer #countdown .count-number {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .tarja .timer #countdown .count-unit {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 @media (min-width: 1080px) {
@@ -120,9 +114,9 @@
     }
 
     .tarja.v2 .text {
-        display: inherit;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         text-align: center;
-        padding-inline: 30%;
     }
 
     .tarja.v2 .wrapper .text h3 {
@@ -155,6 +149,10 @@
     }
 
     .tarja .border {
+        margin-bottom: 0;
+    }
+
+    .tarja .timer {
         margin-bottom: 0;
     }
 

@@ -142,6 +142,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('https://oai-vendas.vercel.app/api/conversion', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+    // Nenhum body é necessário, o backend já gera o evento
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Evento PageView enviado:', data);
+  })
+  .catch(error => {
+    console.error('Erro ao enviar evento PageView:', error);
+  });
+});
+
  // Ajuste para data-alvo 05/03/2025:
  const targetDate = new Date("2025-04-29T00:00:00");
 
@@ -190,20 +207,3 @@ document.addEventListener("DOMContentLoaded", () => {
    // Insere na tela
    document.getElementById("countdown").innerHTML = countdownHTML;
 }
-
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('https://oai-vendas.vercel.app/api/conversion', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-    // Nenhum body é necessário, o backend já gera o evento
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Evento PageView enviado:', data);
-  })
-  .catch(error => {
-    console.error('Erro ao enviar evento PageView:', error);
-  });
-});
