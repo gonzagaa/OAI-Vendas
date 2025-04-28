@@ -3,7 +3,7 @@
     position: relative;
     height: max-content;
 
-    padding-block: 1.5rem;
+    padding-block: .3rem;
     background: linear-gradient(to right,#fa2121, #ff4747, #ff4747, #ff4747, #ff4747, #ff4747, #fa2121);
 } 
 
@@ -61,7 +61,7 @@
 
 .tarja .text h3 {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 
     display: flex;
@@ -70,17 +70,17 @@
 }
 
 .tarja .text h3 span {
-    font-size: 2.5rem;
 }
 
 .tarja .timer {
     color: #fa2121;
     background: linear-gradient(130deg, #ffffff, #ffffff);
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     border-radius: 1rem;
     width: 100%;
 
     margin-bottom: 1rem;
+    margin-top: .7rem;
 }
 
 .tarja .timer #countdown {
@@ -95,12 +95,12 @@
 }
 
 .tarja .timer #countdown .count-number {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .tarja .timer #countdown .count-unit {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
@@ -109,7 +109,7 @@
     }
 
     .tarja {
-        padding-block: 2rem;
+        padding-block: 1.3rem;
     }
 
     .tarja.v2 .text {

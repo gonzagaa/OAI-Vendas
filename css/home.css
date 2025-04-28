@@ -28,7 +28,7 @@
   }
   
   #home .text {
-    margin-top: 100%;
+    margin-top: 0%;
     text-align: center;
     z-index: 4;
 
@@ -76,14 +76,14 @@
     width: 100%;
     margin-top: 1rem;
 
-    padding: 1.5rem;
+    padding: 1rem;
     background: linear-gradient(to right, #002a20, #000, #000, #000, #000, #000, #00261d);
     border-radius: 1rem;
     border: 1px solid #ffffff1d;
   }
 
   #home .meta h4 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #fff;
   }
 
@@ -95,7 +95,7 @@
   }
 
   #home .meta h5 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #fff;
     margin-top: .4rem;
   }
@@ -125,9 +125,9 @@
    }
   
   #home p {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: #a9a9a9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f4f4f4;
     line-height: 1.4;
   }
 
@@ -137,7 +137,8 @@
   }
 
   #home p.dois {
-    font-weight: 400;
+    margin-top: 1rem;
+    font-weight: 800;
     color: #fff;
     font-size: 1.6rem;
   }
@@ -166,7 +167,7 @@
   
   #home .image img.mobile {
     position: absolute;
-    top: -5%;
+    top: -11%;
     left: 50%;
     transform: translate(-50%, 0);
     width: auto;
@@ -386,11 +387,11 @@
     }
   
     header#home .content h1 {
-      font-size: 2.5rem;
-      width: 90%;
+      font-size: 3.5rem;
       line-height: 0.9;
       color: #f8fffd;
       margin-bottom: 0;
+      margin-bottom: 2rem;
     }
 
     header#home .content h1 span {
@@ -405,9 +406,13 @@
 
     header#home .content p {
       color: #fff;
-      font-weight: 500;
-      margin-top: 1rem;
-      font-size: 2rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+
+    header#home .content p.dois {
+      font-weight: 800;
+      font-size: 1.8rem;
     }
   
     header#home .content a button {
