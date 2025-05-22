@@ -160,7 +160,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
  // Ajuste para data-alvo 05/03/2025:
- const targetDate = new Date("2025-05-08T00:00:00");
+ const targetDate = new Date("2025-05-23T00:00:00");
 
  // Atualiza o timer a cada segundo
  const timerInterval = setInterval(updateCountdown, 1000);
